@@ -1,0 +1,40 @@
+{
+  "name": "lab-10-final-api-server",
+  "version": "1.0.0",
+  "description": "## Express Routing and Connected API",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js'",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "start": "node index.js",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataliealway-401-advanced-javascript/lab-10-final-api-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nataliealway-401-advanced-javascript/lab-10-final-api-server/issues"
+  },
+  "homepage": "https://github.com/nataliealway-401-advanced-javascript/lab-10-final-api-server#readme",
+  "dependencies": {
+    "@code-fellows/supergoose": "^1.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "mongoose": "^5.8.9",
+    "morgan": "^1.9.1",
+    "supertest": "^4.0.2",
+    "swagger-ui-express": "^4.1.2",
+    "uuid": "^3.4.0"
+  }
+}
