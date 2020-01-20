@@ -1,49 +1,44 @@
 'use strict';
 
-const uuid = require('uuid/v4');
-
 
 class Model {
-
-  /**
-   * Model Constructor
-   * @param schema {object} - mongo schema
-   */
-  constructor() {
-    this.database = [];
-  }
-  /**
-   * JSON Schema
-   * @returns {*}
-   */
-  jsonSchema() {
-    console.log(typeof this.schema.jsonSchema);
-    return typeof this.schema.jsonSchema === 'function'
-      ? this.schema.jsonSchema()
-      : {};
+  constructor(schema){
+    this.schema = schema;
   }
 
-  get(id) {
-    let response = id ? this.database.filter((record) => record.id === id) : this.database;
-    return Promise.resolve(response);
+  get(_id){
+    if(_id){
+      return this.schema.findOne( {_id} );
+    }
+    else return this.schema.find({});
   }
 
-  create(record) {
-    record.id = uuid();
-    this.database.push(record);
-    return Promise.resolve(record);
+  post(record){
+    let newObject = new this.schema(record);
+    return newObject.save();
+  }
+  
+ 
+  put(_id, record){
+    if(_id && record){
+      return this.schema.findByIdAndUpdate(_id, record, {new: true});
+    }
+    else {
+      return undefined;
+    }
   }
 
-  update(id, record) {
-    this.database = this.database.map((item) => (item.id === id) ? record : item);
-    return Promise.resolve(record);
+  delete(_id){
+    if(_id){
+      return this.schema.findByIdAndDelete(_id);
+    }
+    else {
+      return 'invalid record, try again';
+    }
   }
-
-  delete(id) {
-    this.database = this.database.filter((record) => record.id !== id);
-    return Promise.resolve();
-  }
-
 }
 
+/** 
+ * @module Model
+*/
 module.exports = Model;

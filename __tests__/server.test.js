@@ -1,33 +1,26 @@
 'use strict';
 
-const { server } = require('../lib/server.js');
-const supergoose = require('./supergoose.js');
+const { server } = require('../src/server.js');
+const supergoose = require('@code-fellows/supergoose');
 const mockRequest = supergoose(server);
 
-describe('server testing', () => {
+describe('Error Handlers', () => {
 
-  it('should respond properly on get to /categories', () => {
-  
-    return mockRequest
-      .get('/api/v1/categories')
-      .then(results => {
-        expect(results.status).toBe(200);
-  
-      })
-      .catch(console.error);
-  
+  it('Should respond with an error 404', async () => {
+    try {
+      let result = await mockRequest.get('/bad');
+      expect(result.status).toEqual(404);
+    }
+    catch (error) {error;}
   });
 
-  it('should respond properly on get to /products', () => {
-
-    return mockRequest
-      .get('/api/v1/products')
+  it('should respond with a 500 error', () => {
+    const badObj = {name: 'badObject'};
+    return mockRequest.post('/api/v1/products')
+      .send(badObj)
       .then(results => {
-        expect(results.status).toBe(200);
-
-      })
-      .catch(console.error);
-
+        expect(results.status).toBe(500);
+      }).catch(console.error);
   });
-  
-});  
+});
+

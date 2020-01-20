@@ -2,12 +2,12 @@
 
 // this js file is going to import the schema, import stuff from mongo.js, create a model and export it.
 
-const Model = require('../mongo');
-const schema = require('./products-schema');
+const dataModel = require('./mongo.js');
+const schema = require('./schema/products-schema.js');
 
-class Products extends Model {
+class Products extends dataModel {
   constructor () { super(schema); }
 
 }
 
-module.exports = Products;
+module.exports = new Products;
