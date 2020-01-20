@@ -1,22 +1,22 @@
-# Lab 08 
+# Lab 10
 
-## Express Routing and Connected API
+## Final API Server
 
 ### Author: Natalie Alway
 
 ### Links and Resources
-* [submission PR](https://github.com/nataliealway-401-advanced-javascript/lab-08-express-routing/pull/1)
-* [travis](https://www.travis-ci.com/nataliealway-401-advanced-javascript/lab-08-express-routing)
-* [Backend](https://lab-08-express-routing.herokuapp.com/)
+* [submission PR]()
+* [travis]()
+* [Backend]()
 
 
 #### Documentation
-* [jsdoc](https://github.com/nataliealway-401-advanced-javascript/lab-08-express-routing/tree/workingBranch/docs)
+* [jsdoc]()
 
 ### Setup
 #### `.env` requirements
 * `PORT` - 3000
-* `MONGODB_URI` - `mongodv://localhost:27017/class-08`
+* `MONGODB_URI` - `mongodv://localhost:27017/lab-10-final-api`
 
 #### Running the app
 * `npm start`
