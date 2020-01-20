@@ -5,13 +5,13 @@
 ### Author: Natalie Alway
 
 ### Links and Resources
-* [submission PR]()
-* [travis]()
-* [Backend]()
+* [submission PR](https://github.com/nataliealway-401-advanced-javascript/lab-10-final-api-server/pull/1)
+* [travis](https://www.travis-ci.com/nataliealway-401-advanced-javascript/lab-10-final-api-server)
+* [Backend](https://lab10-api-server.herokuapp.com/)
 
 
 #### Documentation
-* [jsdoc]()
+* [jsdoc](https://github.com/nataliealway-401-advanced-javascript/lab-10-final-api-server/tree/lab10/docs)
 
 ### Setup
 #### `.env` requirements
