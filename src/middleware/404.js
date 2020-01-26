@@ -1,5 +1,10 @@
 'use strict';
-
+/**
+ * 404 Error Handler
+ * @param  {} req
+ * @param  {} res
+ * @param  {} next
+ */
 module.exports = (req,res,next) => {
   let error = { error: 'Resource Not Found' };
   res.statusCode = 404;

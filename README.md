@@ -5,8 +5,8 @@
 ### Author: Natalie Alway
 
 ### Links and Resources
-* [submission PR](https://github.com/nataliealway-401-advanced-javascript/lab-10-final-api-server/pull/1)
-* [travis](https://www.travis-ci.com/nataliealway-401-advanced-javascript/lab-10-final-api-server)
+* [submission PR]()
+* [travis]()
 * [Backend](https://lab10-api-server.herokuapp.com/)
 
 
@@ -29,4 +29,4 @@
 * `npm test`
 
 #### UML
-![UML](./assets/lab08UML.jpg)
+![UML](./assets/lab10UML.jpg)

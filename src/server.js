@@ -5,11 +5,6 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 
-
-// Error handlers
-const errorHandler = require( './middleware/error');
-const notFound = require( './middleware/404' );
-
 // Routes 
 const routes = require('./routes/v1.js');
 

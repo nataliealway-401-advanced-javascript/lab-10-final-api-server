@@ -172,7 +172,7 @@ testing a Mongoose API
     
 
     
-    <h4 class="name" id="deleteProducts"><span class="type-signature"></span>deleteProducts<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="getModel"><span class="type-signature"></span>getModel<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
     
 
     
@@ -180,7 +180,7 @@ testing a Mongoose API
 
 
 <div class="description">
-    Expects no return value (the resource should be gone)
+    sets model to the route that is inputted, or returns a invalid model
 </div>
 
 
@@ -216,10 +216,15 @@ testing a Mongoose API
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>req</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -234,10 +239,15 @@ testing a Mongoose API
 
         <tr>
             
-                <td class="name"><code>response</code></td>
+                <td class="name"><code>res</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -256,6 +266,11 @@ testing a Mongoose API
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -304,7 +319,200 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="routes_products-routes.js.html">routes/products-routes.js</a>, <a href="routes_products-routes.js.html#line74">line 74</a>
+        <a href="src_routes_v1.js.html">src/routes/v1.js</a>, <a href="src_routes_v1.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    model
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="handleGetAll"><span class="type-signature"></span>handleGetAll<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    handles all requests
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_routes_v1.js.html">src/routes/v1.js</a>, <a href="src_routes_v1.js.html#line52">line 52</a>
     </li></ul></dd>
     
 
@@ -340,7 +548,7 @@ testing a Mongoose API
     
 
     
-    <h4 class="name" id="getProduct"><span class="type-signature"></span>getProduct<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="handleGetAll"><span class="type-signature"></span>handleGetAll<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
     
 
     
@@ -348,7 +556,7 @@ testing a Mongoose API
 
 
 <div class="description">
-    expects an array with one object in it
+    handles route that deletes a record
 </div>
 
 
@@ -384,10 +592,15 @@ testing a Mongoose API
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>req</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -402,10 +615,15 @@ testing a Mongoose API
 
         <tr>
             
-                <td class="name"><code>response</code></td>
+                <td class="name"><code>res</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -424,6 +642,11 @@ testing a Mongoose API
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -472,7 +695,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="routes_products-routes.js.html">routes/products-routes.js</a>, <a href="routes_products-routes.js.html#line38">line 38</a>
+        <a href="src_routes_v1.js.html">src/routes/v1.js</a>, <a href="src_routes_v1.js.html#line116">line 116</a>
     </li></ul></dd>
     
 
@@ -508,7 +731,7 @@ testing a Mongoose API
     
 
     
-    <h4 class="name" id="postProducts"><span class="type-signature"></span>postProducts<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="handleGetOne"><span class="type-signature"></span>handleGetOne<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
     
 
     
@@ -516,7 +739,7 @@ testing a Mongoose API
 
 
 <div class="description">
-    expects the record that was just added to the database
+    handles and records one request
 </div>
 
 
@@ -552,10 +775,15 @@ testing a Mongoose API
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>req</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -570,10 +798,15 @@ testing a Mongoose API
 
         <tr>
             
-                <td class="name"><code>response</code></td>
+                <td class="name"><code>res</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -592,6 +825,11 @@ testing a Mongoose API
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -640,7 +878,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="routes_products-routes.js.html">routes/products-routes.js</a>, <a href="routes_products-routes.js.html#line50">line 50</a>
+        <a href="src_routes_v1.js.html">src/routes/v1.js</a>, <a href="src_routes_v1.js.html#line72">line 72</a>
     </li></ul></dd>
     
 
@@ -676,7 +914,7 @@ testing a Mongoose API
     
 
     
-    <h4 class="name" id="putProducts"><span class="type-signature"></span>putProducts<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="handlePost"><span class="type-signature"></span>handlePost<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
     
 
     
@@ -684,7 +922,7 @@ testing a Mongoose API
 
 
 <div class="description">
-    expects the record that was just updated in the database
+    handles route that creates a record
 </div>
 
 
@@ -720,10 +958,15 @@ testing a Mongoose API
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>req</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -738,10 +981,15 @@ testing a Mongoose API
 
         <tr>
             
-                <td class="name"><code>response</code></td>
+                <td class="name"><code>res</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -760,6 +1008,11 @@ testing a Mongoose API
             
 
             <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
             
             </td>
 
@@ -808,7 +1061,190 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="routes_products-routes.js.html">routes/products-routes.js</a>, <a href="routes_products-routes.js.html#line62">line 62</a>
+        <a href="src_routes_v1.js.html">src/routes/v1.js</a>, <a href="src_routes_v1.js.html#line87">line 87</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="handlePut"><span class="type-signature"></span>handlePut<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    handles route for updating record
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_routes_v1.js.html">src/routes/v1.js</a>, <a href="src_routes_v1.js.html#line101">line 101</a>
     </li></ul></dd>
     
 
@@ -854,13 +1290,13 @@ testing a Mongoose API
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Model.html">Model</a></li></ul><h3>Global</h3><ul><li><a href="global.html#deleteProducts">deleteProducts</a></li><li><a href="global.html#getProduct">getProduct</a></li><li><a href="global.html#mongoose">mongoose</a></li><li><a href="global.html#postProducts">postProducts</a></li><li><a href="global.html#putProducts">putProducts</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Model.html">Model</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getModel">getModel</a></li><li><a href="global.html#handleGetAll">handleGetAll</a></li><li><a href="global.html#handleGetOne">handleGetOne</a></li><li><a href="global.html#handlePost">handlePost</a></li><li><a href="global.html#handlePut">handlePut</a></li><li><a href="global.html#mongoose">mongoose</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Wed Jan 15 2020 21:52:49 GMT-0800 (Pacific Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Sun Jan 26 2020 14:44:49 GMT-0800 (Pacific Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

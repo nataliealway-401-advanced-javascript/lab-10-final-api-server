@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1580074629079" clover="3.2.0">
-  <project timestamp="1580074629079" name="All files">
-    <metrics statements="92" coveredstatements="73" conditionals="14" coveredconditionals="8" methods="23" coveredmethods="17" elements="129" coveredelements="98" complexity="0" loc="92" ncloc="92" packages="5" files="9" classes="9"/>
+<coverage generated="1580075583130" clover="3.2.0">
+  <project timestamp="1580075583130" name="All files">
+    <metrics statements="92" coveredstatements="74" conditionals="14" coveredconditionals="8" methods="23" coveredmethods="18" elements="129" coveredelements="100" complexity="0" loc="92" ncloc="92" packages="5" files="9" classes="9"/>
     <package name="models">
       <metrics statements="21" coveredstatements="19" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="7"/>
       <file name="categories.js" path="/Users/nataliealway/devstation/401/lab-10-final-api-server/models/categories.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
       </file>
       <file name="mongo.js" path="/Users/nataliealway/devstation/401/lab-10-final-api-server/models/mongo.js">
         <metrics statements="13" coveredstatements="11" conditionals="8" coveredconditionals="6" methods="5" coveredmethods="5"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="11" count="3" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="17" count="10" type="stmt"/>
-        <line num="18" count="10" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
         <line num="23" count="2" type="cond" truecount="3" falsecount="1"/>
         <line num="24" count="2" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="32" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="33" count="1" type="stmt"/>
+        <line num="32" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="2" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
       </file>
       <file name="products.js" path="/Users/nataliealway/devstation/401/lab-10-final-api-server/models/products.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
       </file>
     </package>
     <package name="models.schema">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="categories-schema.js" path="/Users/nataliealway/devstation/401/lab-10-final-api-server/models/schema/categories-schema.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
       </file>
       <file name="products-schema.js" path="/Users/nataliealway/devstation/401/lab-10-final-api-server/models/schema/products-schema.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src">
       <metrics statements="15" coveredstatements="13" conditionals="3" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="server.js" path="/Users/nataliealway/devstation/401/lab-10-final-api-server/src/server.js">
         <metrics statements="15" coveredstatements="13" conditionals="3" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
         <line num="34" count="0" type="cond" truecount="0" falsecount="3"/>
         <line num="35" count="0" type="stmt"/>
       </file>
@@ -75,7 +75,7 @@
       <metrics statements="14" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="404.js" path="/Users/nataliealway/devstation/401/lab-10-final-api-server/src/middleware/404.js">
         <metrics statements="7" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
@@ -85,7 +85,7 @@
       </file>
       <file name="error.js" path="/Users/nataliealway/devstation/401/lab-10-final-api-server/src/middleware/error.js">
         <metrics statements="7" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
@@ -95,45 +95,45 @@
       </file>
     </package>
     <package name="src.routes">
-      <metrics statements="36" coveredstatements="33" conditionals="3" coveredconditionals="2" methods="12" coveredmethods="10"/>
+      <metrics statements="36" coveredstatements="34" conditionals="3" coveredconditionals="2" methods="12" coveredmethods="11"/>
       <file name="v1.js" path="/Users/nataliealway/devstation/401/lab-10-final-api-server/src/routes/v1.js">
-        <metrics statements="36" coveredstatements="33" conditionals="3" coveredconditionals="2" methods="12" coveredmethods="10"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="20" count="17" type="stmt"/>
-        <line num="21" count="17" type="cond" truecount="2" falsecount="1"/>
-        <line num="23" count="8" type="stmt"/>
-        <line num="24" count="8" type="stmt"/>
-        <line num="25" count="8" type="stmt"/>
-        <line num="27" count="9" type="stmt"/>
-        <line num="28" count="9" type="stmt"/>
-        <line num="29" count="9" type="stmt"/>
+        <metrics statements="36" coveredstatements="34" conditionals="3" coveredconditionals="2" methods="12" coveredmethods="11"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="20" count="21" type="stmt"/>
+        <line num="21" count="21" type="cond" truecount="2" falsecount="1"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="24" count="10" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="27" count="11" type="stmt"/>
+        <line num="28" count="11" type="stmt"/>
+        <line num="29" count="11" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="65" count="1" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
+        <line num="61" count="3" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
         <line num="79" count="3" type="stmt"/>
         <line num="80" count="3" type="stmt"/>
         <line num="81" count="3" type="stmt"/>
-        <line num="94" count="10" type="stmt"/>
+        <line num="94" count="11" type="stmt"/>
         <line num="95" count="10" type="stmt"/>
         <line num="108" count="2" type="stmt"/>
         <line num="109" count="2" type="stmt"/>
         <line num="110" count="2" type="stmt"/>
-        <line num="123" count="1" type="stmt"/>
-        <line num="124" count="1" type="stmt"/>
-        <line num="125" count="0" type="stmt"/>
-        <line num="131" count="1" type="stmt"/>
+        <line num="123" count="2" type="stmt"/>
+        <line num="124" count="2" type="stmt"/>
+        <line num="125" count="2" type="stmt"/>
+        <line num="131" count="2" type="stmt"/>
       </file>
     </package>
   </project>
