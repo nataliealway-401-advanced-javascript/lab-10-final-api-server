@@ -33,6 +33,21 @@ const mockRequest = supergoose(server);
               });
           });
       });
+
+      it('should get() a category', () => {
+        const obj = { name: 'Travel' };
+        return mockRequest.post('/api/v1/categories')
+          .send(obj)
+          .then(results => {
+            return mockRequest.get(`/api/v1/categories/${results.body._id}`)
+              .then(data => {
+                Object.keys(obj).forEach(key => {
+                  expect(data.body[key]).toEqual(obj[key]);
+                });
+              });
+          });
+      });
+
       it('can update() a category', () => {
         let obj = { name:'category'};
         let updateObj = {name:'NewCategory'};
@@ -92,6 +107,22 @@ const mockRequest = supergoose(server);
                   });
               });
           });
+
+          it('can get() a product', () => {
+            let obj = { name: 'Dishes', price: 40, category: 'Kitchen' };
+            return mockRequest.post('/api/v1/products')
+             .send(obj)
+             .then(results => {
+              return mockRequest.get(`/api/v1/products/${results.body._id}`)
+              .then(data => {
+                 Object.keys(obj).forEach(key => {
+                 expect(data.body[key]).toEqual(obj[key]);
+                    });
+                  });
+              });
+          });
+
+
           it('can update() a product', () => {
             let obj = {name: 'Cheetos', price: 3, category: 'Snacks'};
             let updateObj = {name: 'Hot Cheetos', price: 3, category: 'Snacks'};
