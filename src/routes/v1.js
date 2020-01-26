@@ -4,8 +4,8 @@ const express = require('express');
 const router = express.Router();
 
 
-require('../../models/categories.js');
-require('../../models/products.js');
+const categories = require('../../models/categories.js');
+const products = require('../../models/products.js');
 
 
 /**
@@ -35,7 +35,7 @@ function getModel(req, res, next){
 router.param('model', getModel);
 
 /**
- * Routes
+ *  Routes
  */
 router.get('/api/v1/:model', handleGetAll);
 router.post('/api/v1/:model', handlePost);
@@ -44,7 +44,7 @@ router.put('/api/v1/:model/:id', handlePut);
 router.delete('/api/v1/:model/:id', handleDelete);
 
 router.get('/', (req, res) => {
-  res.send('Welcome to the homepage!');
+  res.send('Main page');
 })
 
 
@@ -57,7 +57,13 @@ router.get('/', (req, res) => {
  */
 function handleGetAll(req, res, next) {
   req.model.get()
-    .then(record => res.json(record))
+    .then(records => {
+      const output = {
+        count: records.length,
+        results: records,
+      };
+      res.status(200).json(output);
+    })
     .catch(next);
 }
 
@@ -86,7 +92,7 @@ function handleGetOne(req, res, next) {
  */
 function handlePost(req, res, next) {
   req.model.post(req.body)
-    .then(result => res.json(result))
+    .then(result => res.status(200).json(result))
     .catch(next);
 }
 
@@ -98,10 +104,11 @@ function handlePost(req, res, next) {
  * @param {*} res
  * @param {*} next
  */
-function handlePut(request,response,next) {
-  request.model.update(request.params.id, request.body)
-    .then( result => response.status(200).json(result) )
-    .catch( next );
+function handlePut(req, res ,next) {
+  let id = req.params.id;
+  req.model.put(id, req.body)
+    .then(result => res.status(200).json(result))
+    .catch(next);
 }
 
 
@@ -112,10 +119,11 @@ function handlePut(request,response,next) {
  * @param {*} res
  * @param {*} next
  */
-function handleDelete(request,response,next) {
-  request.model.delete(request.params.id)
-    .then( result => response.status(200).json(result) )
-    .catch( next );
+function handleDelete(req,res ,next) {
+  let id = req.params.id;
+  req.model.delete(id)
+    .then(result => res.status(200).json(result))
+    .catch(next);
 }
 /**
  * @model router
