@@ -1,2 +1,32 @@
-# lab-10-final-api-server
-A fully functional, tested and documented Dynamic API Server
+# Lab 10
+
+## Final API Server
+
+### Author: Natalie Alway
+
+### Links and Resources
+* [submission PR]()
+* [travis]()
+* [Backend](https://lab10-api-server.herokuapp.com/)
+
+
+#### Documentation
+* [jsdoc](https://github.com/nataliealway-401-advanced-javascript/lab-10-final-api-server/tree/lab10/docs)
+
+### Setup
+#### `.env` requirements
+* `PORT` - 3000
+* `MONGODB_URI` - `mongodv://localhost:27017/lab-10-final-api`
+
+#### Running the app
+* `npm start`
+* Endpoint: `/api/v1/categories`
+  * Returns a JSON object category data in it.
+* Endpoint: `/api/v1/products`
+  * Returns a JSON object with product data in it.
+  
+#### Tests
+* `npm test`
+
+#### UML
+![UML](./assets/lab10UML.jpg)
