@@ -90,8 +90,9 @@ describe('Products route API testing', () => {
     return mockRequest.post('/api/v1/products')
       .send(obj)
       .then(results => {
+        let record = results.body;
         Object.keys(obj).forEach(key => {
-          expect(results.body[key]).toEqual(obj[key]);
+          expect(record[key]).toEqual(obj[key]);
         });
       });
   });

@@ -6,12 +6,11 @@ const mockRequest = supergoose(server);
 
 describe('Error Handlers', () => {
 
-  it('Should respond with an error 404', async () => {
-    try {
-      let result = await mockRequest.get('/bad');
-      expect(result.status).toEqual(404);
-    }
-    catch (error) {error;}
+  it('Should respond with an error 404', () => {
+    return mockRequest.get('/bad')
+      .then( result => {
+        expect(result.status).toBe(404);
+      });
   });
 
   it('should respond with a 500 error', () => {
