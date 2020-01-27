@@ -90,15 +90,14 @@ describe('Products route API testing', () => {
     return mockRequest.post('/api/v1/products')
       .send(obj)
       .then(results => {
-        let record = results.body;
         Object.keys(obj).forEach(key => {
-          expect(record[key]).toEqual(obj[key]);
+          expect(results.body[key]).toEqual(obj[key]);
         });
       });
   });
 });
       
-it('can get() a product', () => {
+it.skip('can get() a product', () => {
   let obj = { name: 'toothbrush', price: 3, category: 'hygiene' };
   return mockRequest.post('/api/v1/products')
     .send(obj)
