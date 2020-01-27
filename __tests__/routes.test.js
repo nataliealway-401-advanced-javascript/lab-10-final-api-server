@@ -97,7 +97,7 @@ describe('Products route API testing', () => {
   });
 });
       
-it.skip('can get() a product', () => {
+it('can get() a product', () => {
   let obj = { name: 'toothbrush', price: 3, category: 'hygiene' };
   return mockRequest.post('/api/v1/products')
     .send(obj)
