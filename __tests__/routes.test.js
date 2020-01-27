@@ -8,6 +8,7 @@ const mockRequest = supergoose(server);
 //____________ CATEGORY ROUTES ______________
 
 describe('Category route API testing', () => {
+
   it('can post() a new category', () => {
     let obj = { name: 'Electronics' };
     return mockRequest.post('/api/v1/categories')

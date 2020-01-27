@@ -6,7 +6,7 @@ const mockRequest = supergoose(server);
 
 describe('Error Handlers', () => {
 
-  it.skip('Should respond with an error 404', () => {
+  it('Should respond with an error 404', () => {
     return mockRequest
       .get('/bad')
       .then(result => {
@@ -15,7 +15,7 @@ describe('Error Handlers', () => {
       .catch(console.error);
   });
 
-  it.skip('should respond with a 500 error', () => {
+  it('should respond with a 500 error', () => {
     const badObj = {name: 'badObject'};
     return mockRequest.post('/api/v1/products')
       .send(badObj)
